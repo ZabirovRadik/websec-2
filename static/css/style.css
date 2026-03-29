@@ -1,0 +1,222 @@
+.legend {
+    background: #f8f9fa;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.legend-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+}
+
+.legend-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+}
+
+#schedule-table {
+    table-layout: fixed;
+    width: 100%;
+    font-size: 0.85rem;
+}
+
+#schedule-table th {
+    padding: 12px 8px;
+    font-weight: 600;
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+}
+
+#schedule-table td {
+    padding: 8px;
+    vertical-align: top;
+    border: 1px solid #dee2e6;
+}
+
+.time-cell {
+    font-weight: 600;
+    background: #f8f9fa;
+    width: 100px;
+}
+
+.lesson-cell {
+    padding: 8px !important;
+}
+
+.lesson {
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    border-left: 4px solid;
+    transition: all 0.2s;
+}
+
+.lesson:last-child {
+    margin-bottom: 0;
+}
+
+.lesson-type-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.lesson-subject {
+    margin-bottom: 6px;
+}
+
+.lesson-subject strong {
+    font-size: 0.85rem;
+}
+
+.lesson-teacher, .lesson-room, .lesson-groups {
+    font-size: 0.7rem;
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #6c757d;
+}
+
+.lesson-groups {
+    margin-top: 6px;
+    padding-top: 4px;
+    border-top: 1px solid rgba(0,0,0,0.05);
+    color: #0d6efd;
+}
+
+.empty-cell {
+    background: #fafafa;
+    text-align: center;
+    vertical-align: middle !important;
+}
+
+.empty-lesson {
+    color: #adb5bd;
+    font-size: 0.8rem;
+}
+
+.lesson-lecture { background: #e8f5e9; }
+.lesson-practice { background: #e1f5fe; }
+.lesson-lab { background: #fce4ec; }
+.lesson-exam { background: #cce5ff; }
+.lesson-credit { background: #fff3cd; }
+.lesson-consult { background: #d1f7f0; }
+.lesson-other { background: #fff0e6; }
+.lesson-iot { background: #e9d8ff; }
+
+.mobile-days-row {
+    display: flex;
+    gap: 4px;
+    overflow-x: auto;
+    padding: 8px 0;
+    margin-bottom: 20px;
+}
+
+.mobile-day {
+    flex: 0 0 auto;
+    text-align: center;
+    padding: 6px 10px;
+    border-radius: 10px;
+    background: #f8f9fa;
+    cursor: pointer;
+    min-width: 50px;
+}
+
+.mobile-day.selected {
+    background: #0d6efd;
+    color: white;
+}
+
+.mobile-day-name {
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.mobile-day-number {
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.mobile-day-header {
+    background: #f8f9fa;
+    padding: 12px 16px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    border-left: 4px solid #0d6efd;
+}
+
+.mobile-lesson {
+    background: white;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-left: 4px solid;
+}
+
+.mobile-lesson-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.lesson-type-badge {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+}
+
+.lesson-time {
+    font-size: 0.75rem;
+    color: #6c757d;
+}
+
+.lesson-teacher, .lesson-room, .lesson-groups {
+    font-size: 0.8rem;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #6c757d;
+}
+
+.lesson-groups {
+    margin-top: 10px;
+    padding-top: 8px;
+    border-top: 1px solid #e9ecef;
+    color: #0d6efd;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    
+    .btn-text {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 576px) {
+    .btn-text {
+        display: none;
+    }
+    
+    .dropdown-toggle {
+        padding: 8px 12px;
+    }
+}
